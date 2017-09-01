@@ -1,0 +1,27 @@
+{
+  "name": "copy-content",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "With a single click, automatically selects relevant text and copies it to the clipboard.",
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "Extract content and copy it to the clipboard."
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
+}
